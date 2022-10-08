@@ -1,18 +1,19 @@
 body {
-    margin: 0;
-    font-family: Helvetica;
-  }
+margin: 0;
+font-family: Helvetica;
+}
   
 .topnav {
+display: flex;
+flex-direction: row;
+align-items: center;
 overflow: hidden;
 background-color: #333;
 text-align: center;
 }
 
 .topnav a {
-float: left;
 color: #f2f2f2;
-vertical-align: baseline;
 padding: 16px 16px 16px 16px;
 text-decoration: none;
 font-size: 17px;
@@ -28,9 +29,43 @@ background-color: #4CAF50;
 color: white;
 }
 
-.topnav h1{
-float: left;
+.topnav h1 {
+display: flex;
+padding: 0px 16px 0px 16px;
 color: #f2f2f2;
 font-size: 30px;
 }
 
+#l1 {
+    display: flex;
+    justify-content:flex-start;
+}
+
+#r1 {
+    align-items: flex-end;
+}
+
+.content {
+margin-left: 3mm;
+flex-direction: row;
+display: flex;
+align-items:flex-start;
+justify-content: space-between;
+margin: 30 30em;
+}
+
+#p1 {
+display: flex;
+flex-direction: row;
+font: 1em sans-serif;
+justify-content: center;
+align-items: center;
+font-size: 30px;
+}
+
+#t {
+    margin-left: 3mm;
+    vertical-align:top;
+    font-size: 25;
+    align-self: flex-start;
+}
